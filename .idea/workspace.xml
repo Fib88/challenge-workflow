@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2762ec18-0d26-4a8a-ae75-d360ad8bced2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ticketdeskchallenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ticketdeskchallenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
@@ -118,6 +128,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/verify-email-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/reset-password-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kNTtFj5DuXalIU8STH076jDikI" />
@@ -130,8 +141,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,9 +184,25 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="263" height="500" key="HiddenNamespacesPopup/72.27.1294.741@72.27.1294.741" timestamp="1605540633617" />
-    <state x="620" y="275" width="196" height="258" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605540767919">
+    <state x="453" y="117" width="521" height="568" key="NewPhpClassDialog" timestamp="1605603628446">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="620" y="275" width="196" height="258" key="com.intellij.database.actions.DdlActions$CreateObject$1/72.27.1294.741@72.27.1294.741" timestamp="1605540767919" />
+    <state x="453" y="117" width="521" height="568" key="NewPhpClassDialog/72.27.1294.741@72.27.1294.741" timestamp="1605603628446" />
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1605603736775">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1605603736775" />
+    <state x="620" y="275" width="196" height="258" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605602387223">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="620" y="275" width="196" height="258" key="com.intellij.database.actions.DdlActions$CreateObject$1/72.27.1294.741@72.27.1294.741" timestamp="1605602387223" />
+    <state x="556" y="287" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605602354692">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="556" y="287" width="367" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/72.27.1294.741@72.27.1294.741" timestamp="1605602354692" />
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605603283102">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1605603283102" />
   </component>
 </project>
