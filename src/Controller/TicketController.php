@@ -17,6 +17,8 @@ class TicketController extends AbstractController
 {
     /**
      * @Route("/", name="ticket_index", methods={"GET"})
+     * @param TicketRepository $ticketRepository
+     * @return Response
      */
     public function index(TicketRepository $ticketRepository): Response
     {
@@ -27,6 +29,8 @@ class TicketController extends AbstractController
 
     /**
      * @Route("/new", name="ticket_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -51,6 +55,8 @@ class TicketController extends AbstractController
 
     /**
      * @Route("/{id}", name="ticket_show", methods={"GET"})
+     * @param Ticket $ticket
+     * @return Response
      */
     public function show(Ticket $ticket): Response
     {
@@ -61,6 +67,9 @@ class TicketController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="ticket_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Ticket $ticket
+     * @return Response
      */
     public function edit(Request $request, Ticket $ticket): Response
     {
@@ -81,6 +90,9 @@ class TicketController extends AbstractController
 
     /**
      * @Route("/{id}", name="ticket_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Ticket $ticket
+     * @return Response
      */
     public function delete(Request $request, Ticket $ticket): Response
     {
