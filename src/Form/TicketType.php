@@ -16,7 +16,6 @@ class TicketType extends AbstractType
             ->add('message')
             ->add('timestamp')
             ->add('priority')
-            ->add('userId')
         ;
     }
 
