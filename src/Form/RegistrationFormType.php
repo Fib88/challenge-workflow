@@ -20,6 +20,7 @@ class RegistrationFormType extends AbstractType
         $builder
             ->add('firstname')
             ->add('lastname')
+
 //            ->add('roles', ChoiceType::class ,array(
 //                'attr' => array('class'=>'form-control','style'=>'margin:5px 0;'),
 //                'choices' => array(
@@ -27,6 +28,9 @@ class RegistrationFormType extends AbstractType
 //                ),
 //                'required'=>true,
            // ))
+
+           // ->add('roles')
+
             ->add('email')
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
