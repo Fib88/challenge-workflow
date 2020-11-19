@@ -50,6 +50,11 @@ class Ticket
      */
     private $comments;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $status;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -146,6 +151,18 @@ class Ticket
                 $comment->setTicketId(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getStatus(): ?string
+    {
+        return $this->Status;
+    }
+
+    public function setStatus(string $Status): self
+    {
+        $this->Status = $Status;
 
         return $this;
     }
