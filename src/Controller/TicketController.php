@@ -9,6 +9,7 @@ use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -16,6 +17,17 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class TicketController extends AbstractController
 {
+    private $session;
+    private $userRepository;
+    private $name;
+
+    public function __construct(SessionInterface $session, UserRepository $repository)
+    {
+        $this->session = $session;
+        $this->userRepository = $repository;
+
+    }
+
     /**
      * @Route("/", name="ticket_index", methods={"GET"})
      * @param TicketRepository $ticketRepository
@@ -41,12 +53,15 @@ class TicketController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             //find user and add to $ticket
-            $ticket->getUserId();
+            $email = $this->session->get('_security.last_username');
+            $user = $this->userRepository->findOneByEmail($email);
+            $ticket->getUserId($user);   //getUserId($user);
             $ticket->setStatus('Open');
             $ticket->setTimestamp(new \DateTime());
             $ticket->setPriority(1);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($ticket);
+            var_dump($ticket);
             $entityManager->flush();
 
 
