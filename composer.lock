@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-
-    "content-hash": "c71f6bc9cb3bfe93777881e6e411dd50",
-
-    "content-hash": "6b3d9c20578b5f17b31bbc9249c635ab",
-
+    "content-hash": "2e667298eb1c7e28b13d768de6949ea6",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -2280,10 +2276,6 @@
                 "mail",
                 "mailer"
             ],
-            "support": {
-                "issues": "https://github.com/swiftmailer/swiftmailer/issues",
-                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.3"
-            },
             "time": "2019-11-12T09:31:26+00:00"
         },
         {
@@ -6122,10 +6114,6 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "support": {
-                "issues": "https://github.com/symfony/swiftmailer-bundle/issues",
-                "source": "https://github.com/symfony/swiftmailer-bundle/tree/v3.5.1"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",

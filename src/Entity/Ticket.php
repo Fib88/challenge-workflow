@@ -101,7 +101,7 @@ class Ticket
         return $this;
     }
 
-    public function getUserId(): ?User
+    public function getUserId($user): ?User
     {
         return $this->userId;
     }
@@ -157,12 +157,12 @@ class Ticket
 
     public function getStatus(): ?string
     {
-        return $this->Status;
+        return $this->status;
     }
 
-    public function setStatus(string $Status): self
+    public function setStatus(string $status): self
     {
-        $this->Status = $Status;
+        $this->status = $status;
 
         return $this;
     }
