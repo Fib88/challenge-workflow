@@ -14,13 +14,17 @@ class UserType extends AbstractType
     {
         $builder
             ->add('email')
-            ->add('roles', ChoiceType::class ,array(
-                'attr' => array('class'=>'form-control','style'=>'margin:5px 0;'),
-                'choices' => array(
-                    'client' => ['ROLE_USER'],
-                ),
-                'required'=>true,
-            ))
+            ->add('role')
+//            ->add('roles', ChoiceType::class ,array(
+//                'attr' => array('class'=>'form-control','style'=>'margin:5px 0;'),
+//                'choices' => array(
+//                    'agent' => 'ROLE_AGENT',
+//                    'second line' => 'ROLE_SECOND_LINE_AGENT',
+//                    'manager' => 'ROLE_MANAGER',
+//                    'user' => 'ROLE_USER'
+//                ),
+//                'required'=>true,
+//            ))
             ->add('password')
             ->add('firstname')
             ->add('lastname')

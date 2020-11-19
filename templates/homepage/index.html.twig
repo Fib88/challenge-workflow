@@ -3,18 +3,87 @@
 {% block title %}Hello HomepageController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        li {
+            float: left;
+        }
 
-    This friendly message is coming from:
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
     <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/challenge-workflow/src/Controller/HomepageController.php'|file_link(0) }}">src/Controller/HomepageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/challenge-workflow/templates/homepage/index.html.twig'|file_link(0) }}">templates/homepage/index.html.twig</a></code></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news"></a></li>
+        <li><a href="#language">language</a></li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropBtn">Account</a>
+            <div class="dropdown-content">
+                <a href="http://challenge-workflow.local/index.php/login">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropBtn">Contact Us</a>
+            <div class="dropdown-content">
+                <a href="">Call</a>
+                <a href="#">Send us a Mail</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropBtn">Ticket Center</a>
+            <div class="dropdown-content">
+                <a href="http://challenge-workflow.local/index.php/ticket/">New Ticket</a>
+                <a href="#">Send us a Mail</a>
+            </div>
+        </li>
     </ul>
-</div>
+    </div>
 {% endblock %}
