@@ -103,7 +103,12 @@ class User implements UserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
+
+        $roles = ['ROLE_USER','ROLE_CUSTOMER'];
+//            ROLE_CUSTOMER','ROLE_AGENT','ROLE_SECOND_LINE_AGENT','ROLE_MANAGER'];
+
         $roles[] = 'ROLE_USER';
+
 
 
         return array_unique($roles);
